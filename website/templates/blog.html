@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tab_content %}
+Blogs
+{% endblock %}
+{% block content %}
+
+<section>
+<div class="container">
+    <br>
+    <h2>All Blogs</h2>
+    <div class="row">
+        <div class="col-md-12 mt-4 mb-4 center">
+            {% for blog in blogs %}
+            <div class="blog">
+                <a href="{% url 'blog_detail' blog.id blog.slug %}"><h4>&raquo; {{ blog.title }}</h4></a>
+                <p class="text-muted">{{ blog.date|date:'F d, Y' }}</p>
+                <p class="card-text">{{ blog.description|striptags|truncatechars:200 }}</p>
+                <br>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+{% endblock %}

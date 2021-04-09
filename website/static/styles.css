@@ -1,0 +1,371 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* HEADER STYLES */
+header {
+    background: #666666;
+    color: #ffffff;
+    padding: 4px 10px;
+}
+
+/* logo nest inside header */
+header #page-header {
+    color: white;
+    text-decoration: none;
+    width: 49%;
+    display: inline-table;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: rgb(218, 168, 112);
+}
+
+header img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+header h2 {
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* MAIN NAVIGATION */
+header #main-navigation {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+header #main-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+header #main-navigation ul li {
+    display: inline-block; 
+}
+
+header #main-navigation ul li a {
+    color: white;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 5px 5px;
+}
+
+header #main-navigation ul li a:hover {
+    background: rgb(218, 168, 112);
+    border-radius: 2px;
+    transition: 0.3s ease all;
+} 
+
+.container h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(218, 168, 112);
+}
+
+.blog-detail h4 {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.blog-detail-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.blog h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(66, 67, 70);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.blog h4:hover {
+    color: rgb(218, 168, 112);
+    background-color: transparent;
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: rgb(168, 166, 166);
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 20px;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 550px;
+    text-align: center;
+    background: #555;
+    background-image: url("../static/images/winery.png");
+    background-size: 100% 100%; 
+}
+
+.hero-content {
+    color: white;
+    padding-top: 20px;
+    line-height: 1;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.hero-content p {
+    font-size: 30px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 60px;
+    color: black;
+}
+
+/* SITE SECTION STYLINGS */
+.site-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+.site-section-inside {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.site-section-inside-connect {
+    width: 40%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
+}
+
+.section-header h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(218, 168, 112);
+}
+
+.section-header h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: -50%;
+    color: rgb(66, 67, 70);
+}
+
+.section-header p {
+    color:rgb(66, 67, 70);
+}
+
+.site-section-secondary {
+    background: #EFEFEF;
+}
+
+/* ABOUT */
+.about {
+    background: #ECF0F1;
+    width: 100%;
+    padding: 100px;
+}
+
+/* FEATURE BOXES */
+.pages-box {
+    display: inline-block;
+    width: 20%;
+    padding: 15px 20px;
+    line-height: 40%;
+}
+
+.pages-box img {
+    width: 30px;
+    margin-bottom: 0;
+}
+
+.pages-box img:hover {
+    opacity: .50;
+}
+
+/* INTERESTS */
+.container-interest {
+    display: inline-block;
+    padding: 10px 10px;   
+    left: 50%;
+}
+
+.site-link{
+    color: rgb(66, 67, 70);
+    background-color: transparent;
+    text-align: none;
+    text-decoration: none;
+}
+
+.site-link:hover {
+    color: rgb(218, 168, 112);
+    background-color: transparent;
+}
+
+.interest-box-wine {
+    padding: 10px 10px;   
+    left: 50%;
+    background-image: url(../static/images/wine.png);
+    background-size: cover;
+    min-height: 575px;
+    border-radius: 5px;
+}
+
+.interest-box-food {
+    padding: 10px 10px;   
+    left: 50%;
+    background-image: url(../static/images/food.png);
+    background-size: cover;
+    min-height: 575px;
+    border-radius: 5px;
+}
+
+.interest-box-sustainability {
+    padding: 10px 10px;   
+    left: 50%;
+    background-image: url(../static/images/sustainability.png);
+    background-size: cover;
+    min-height: 575px;
+    border-radius: 5px;
+}
+
+.interest-text h5 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding-top: 15px;
+    text-align: left;
+}
+
+mark {
+    background: white !important;
+    border-radius: 4px;
+}
+
+.all-blogs {
+    text-align: right;
+    padding-right: 75px;
+    margin-top: -35px;
+}
+
+.all-blogs-link {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(218, 168, 112);
+}
+
+.all-blogs-link:hover {
+    color: rgb(66, 67, 70);
+    background-color: transparent;
+}
+
+/*mobile responsive*/
+@media screen and (max-width: 768px) {
+
+/* HEADER   */
+    header #page-header {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    header #main-navigation {
+        width: 100%;
+        display: block; 
+        text-align: center;
+    }
+    
+/*  HERO  */
+    .hero {
+        min-height: 300px;
+    }
+    .hero-content {
+        padding-top: 80px;
+    }
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-content a {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-width: 1px;
+        background: #FFF;
+        color: #333;        
+    }
+    
+/* FEATURE BOXES   */
+    .pages-box {
+        width: 100%;
+        display: block;
+    }
+    
+/* INTEREST BOXES   */
+    .interest-box {
+        width: 100%;
+        display: block;
+    }
+}
