@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Blog #, Category
+from .models import Blog
 
 def home(request):
     blogs = Blog.objects.order_by('-date')

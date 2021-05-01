@@ -42,16 +42,15 @@
         <div id="about" class="section-header about">
             <h2>About Me</h2>
             <br>
-            <p>Welcome and thank you for visiting my site! This is my first personal webpage and I thought it would be fun to introduce you to a few things near and dear to me.
-                First and foremost, I have three naughty but very loving and spunky dogs name Tobey, Jamey, and Otis. I share the glorious responsibility of 
-                caring for them with my favorite person in the world, my partner, best friend and fellow animal lover, Kiel. 
+            <p>Welcome and thank you for visiting my site! This is my first personal webpage and I thought it would be fun to introduce you to a few of my favorite things.
+                First and foremost, I have three very naughty but also very loving and spunky dogs name Tobey, Jamey, and Otis. I share the glorious responsibility of 
+                caring for them with my favorite person in the whole world, my partner, best friend and fellow animal lover, Kiel. 
                 I am a huge lover of wine and one can say I'm obsessed - though I am by no means a wine expert (or snob). 
                 I'm an ardent foodie and enjoy learning about cuisines from around the world. I'm addicted to food
-                travel, so when I have free time you can be sure to find me immersed in such shows, documentaries, books ... and when I get the 
-                off-chance, travelling to personally learn and experience the food and cultures aroumd the world.
-                I'm also very passionate about sustainability and am continually working to reduce waste in my life as much as humanely possible. 
+                travel, so when I have free time you can be sure to find me immersed in such documentaries, books or travelling to personally learn and experience regional food and cultures.
+                I'm also very passionate about sustainability and am continually working to reduce waste in my everyday life. 
                 I make a conscious effort to support local businesses and sustainable companies with my spending power and 
-                urge everyone to try and do the same. 
+                urge everyone to do the same. 
             </p>
         </div>
 
@@ -67,7 +66,11 @@
                     <div class="container-interest">
                         <div class="interest-box-wine">
                             <div class="interest-text">
-                                <h5><mark>Wine</mark></h5>
+                            {% for blog in blogs %}
+                                {% if forloop.first %}
+                                <h5><a href="{% url 'blog_detail' blog.id blog.slug %}"><mark>Wine</mark></a></h5>
+                                {% endif %}
+                            {% endfor %}
                             </div>
                         </div>
                         <br>
@@ -83,7 +86,11 @@
                     <div class="container-interest">
                         <div class="interest-box-food">
                             <div class="interest-text">
-                                <h5><mark>Food</mark></h5>
+                                {% for blog in blogs %}
+                                    {% if forloop.counter == 2 %}
+                                    <h5><a href="{% url 'blog_detail' blog.id blog.slug %}"><mark>Food</mark></a></h5>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
                         <br>
@@ -98,7 +105,11 @@
                     <div class="container-interest">
                         <div class="interest-box-sustainability">
                             <div class="interest-text">
-                                <h5><mark>Sustainability</mark></h5>
+                            {% for blog in blogs %}
+                                {% if forloop.counter == 3 %}
+                                <h5><a href="{% url 'blog_detail' blog.id blog.slug %}"><mark>Sustainability</mark></a></h5>
+                                {% endif %}
+                            {% endfor %}
                             </div>
                         </div>
                         <br>

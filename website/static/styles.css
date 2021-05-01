@@ -168,6 +168,11 @@ footer {
     padding: 30px;
 }
 
+#about {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
 .site-section-inside {
     max-width: 1200px;
     margin-left: auto;
@@ -210,6 +215,8 @@ footer {
 
 .section-header p {
     color:rgb(66, 67, 70);
+    font-size: 16px;
+    font-weight: 250;
 }
 
 .site-section-secondary {
@@ -264,7 +271,7 @@ footer {
     left: 50%;
     background-image: url(../static/images/wine.png);
     background-size: cover;
-    min-height: 575px;
+    min-height: 500px;
     border-radius: 5px;
 }
 
@@ -273,7 +280,7 @@ footer {
     left: 50%;
     background-image: url(../static/images/food.png);
     background-size: cover;
-    min-height: 575px;
+    min-height: 500px;
     border-radius: 5px;
 }
 
@@ -282,7 +289,7 @@ footer {
     left: 50%;
     background-image: url(../static/images/sustainability.png);
     background-size: cover;
-    min-height: 575px;
+    min-height: 500px;
     border-radius: 5px;
 }
 
@@ -292,6 +299,10 @@ footer {
     margin: 0;
     padding-top: 15px;
     text-align: left;
+}
+
+.interest-text a {
+    text-decoration: none;
 }
 
 mark {
