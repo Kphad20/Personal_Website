@@ -89,6 +89,17 @@ header #main-navigation ul li a:hover {
     font-weight: 400;
 }
 
+.blog-detail h5 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.blog-detail img {
+    width: 450px;
+    height: auto;
+}
+
 .blog-detail-image {
     display: block;
     margin-left: auto;
